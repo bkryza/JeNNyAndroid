@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" android:background="#CC333333">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/appwidget_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/appwidget_text"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/appwidget_text"
+            android:background="#00000000" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/lightbox_status"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:layout_weight="0.3"
+                android:text="LIGHTBOX"/>
+            <Button
+                android:id="@+id/lightbox_on"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="ON"/>
+            <Button
+                android:id="@+id/lightbox_off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="OFF"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/sleep_status"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:layout_weight="0.3"
+                android:text="SLEEP"/>
+            <Button
+                android:id="@+id/sleep_on"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="ON"/>
+            <Button
+                android:id="@+id/sleep_off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="OFF"/>
+        </LinearLayout>
+
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:rowCount="4"
+                android:columnCount="8"
+                >
+
+                <!-- LABELS -->
+
+                <TextView android:text="Z"/>
+                <TextView android:text="A"/>
+                <TextView android:text="B"/>
+                <TextView android:text="C"/>
+                <TextView android:text="D"/>
+                <TextView android:text="E"/>
+                <TextView android:text="F"/>
+                <TextView android:text="G"/>
+
+                <!-- UP BUTTONS -->
+                <Button
+                    android:id="@+id/blind_up_z"
+                    android:text="U"
+                    style="@style/RollerBlindButtonStyle" />
+                <Button
+                    android:id="@+id/blind_up_a"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="U"/>
+                <Button
+                    android:id="@+id/blind_up_b"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="U"/>
+                <Button
+                    android:id="@+id/blind_up_c"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="U"/>
+                <Button
+                    android:id="@+id/blind_up_d"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="U"/>
+                <Button
+                    android:id="@+id/blind_up_e"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="U"/>
+                <Button
+                    android:id="@+id/blind_up_f"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="U"/>
+                <Button
+                    android:id="@+id/blind_up_g"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="U"/>
+
+
+                <!-- STOP BUTTONS -->
+                <Button
+                    android:id="@+id/blind_stop_z"
+                    android:text="S"
+                    style="@style/RollerBlindButtonStopStyle" />
+                <Button
+                    android:id="@+id/blind_stop_a"
+                    style="@style/RollerBlindButtonStopStyle"
+                    android:text="S"/>
+                <Button
+                    android:id="@+id/blind_stop_b"
+                    style="@style/RollerBlindButtonStopStyle"
+                    android:text="S"/>
+                <Button
+                    android:id="@+id/blind_stop_c"
+                    style="@style/RollerBlindButtonStopStyle"
+                    android:text="S"/>
+                <Button
+                    android:id="@+id/blind_stop_d"
+                    style="@style/RollerBlindButtonStopStyle"
+                    android:text="S"/>
+                <Button
+                    android:id="@+id/blind_stop_e"
+                    style="@style/RollerBlindButtonStopStyle"
+                    android:text="S"/>
+                <Button
+                    android:id="@+id/blind_stop_f"
+                    style="@style/RollerBlindButtonStopStyle"
+                    android:text="S"/>
+                <Button
+                    android:id="@+id/blind_stop_g"
+                    style="@style/RollerBlindButtonStopStyle"
+                    android:text="S"/>
+
+
+                <!-- DOWN BUTTONS -->
+                <Button
+                    android:id="@+id/blind_down_z"
+                    android:text="D"
+                    style="@style/RollerBlindButtonStyle" />
+                <Button
+                    android:id="@+id/blind_down_a"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="D"/>
+                <Button
+                    android:id="@+id/blind_down_b"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="D"/>
+                <Button
+                    android:id="@+id/blind_down_c"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="D"/>
+                <Button
+                    android:id="@+id/blind_down_d"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="D"/>
+                <Button
+                    android:id="@+id/blind_down_e"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="D"/>
+                <Button
+                    android:id="@+id/blind_down_f"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="D"/>
+                <Button
+                    android:id="@+id/blind_down_g"
+                    style="@style/RollerBlindButtonStyle"
+                    android:text="D"/>
+            </GridLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
