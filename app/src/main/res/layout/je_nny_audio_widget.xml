@@ -82,7 +82,7 @@
                 android:layout_height="40dp"
                 android:textAlignment="center"
                 android:layout_weight="0.3"
-                android:text="MUSIC"/>
+                android:text="MOPIDY"/>
             <Button
                 android:id="@+id/music_on"
                 android:layout_width="0dp"
@@ -108,7 +108,7 @@
                 android:layout_height="40dp"
                 android:textAlignment="center"
                 android:layout_weight="0.3"
-                android:text="MUSIC"/>
+                android:text="VOLUME"/>
             <Button
                 android:id="@+id/volume_up"
                 android:layout_width="0dp"

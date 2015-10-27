@@ -88,10 +88,10 @@ public class JeNNyAudioWidget extends AppWidgetProvider {
             call = service.updateStatus("MopidySwitch", "OFF");
         }
         else if (intent.getAction().equals("VOLUME_UP")) {
-            call = service.updateStatus("RotelVolume", "UP");
+            call = service.updateStatus("Rotel_Volume", "UP");
         }
         else if (intent.getAction().equals("VOLUME_DOWN")) {
-            call = service.updateStatus("RotelVolume", "DOWN");
+            call = service.updateStatus("Rotel_Volume", "DOWN");
         }
 
         if(call != null) {
